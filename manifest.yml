@@ -1,0 +1,14 @@
+applications:
+- path: .
+  memory: 128M
+  instances: 1
+  domain: mybluemix.net
+  name: SpeedWork
+  host: speedwork
+  disk_quota: 1024M
+  services:
+  - SpeedWork-MAS
+  - SpeedWork-Push
+  - SpeedWork-MobileData
+  - SpeedWork-Mobile Quality Assurance
+  command: node app.js
